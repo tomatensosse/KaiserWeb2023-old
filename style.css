@@ -1,0 +1,484 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Color scheme */
+body {
+	/*background-color: #f2f2f2;*/
+    background-color: black;
+	color: #333;
+	font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+main {
+    margin-top: 0px;
+}
+
+section {
+    padding: 50px;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    border-radius: 18px;
+}
+
+header {
+    position: fixed;
+	background-color: black;
+	color: #fff;
+	padding: 20px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+    font-size: 1vw;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.icon {
+    vertical-align: bottom;
+}
+
+.carousel {
+    background: #EEE;
+}
+  
+.carousel-cell {
+    width: 66%;
+    height: 22vw;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 18px;
+  
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    text-justify: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+  
+.carousel-image {
+    display: block;
+  
+    width: 100%;
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%);
+  
+    border-collapse: separate; 
+    border-radius: 18px;
+}
+
+#welcomeBgVid {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+
+    border-radius: 18px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome {
+    position: relative;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#about-us {
+    max-height: 80vh;
+    min-height: 40vh;
+    padding-bottom: 10vh;
+    background-color: rgb(30, 30, 30);
+
+    box-shadow: 0px -30px 120px black;
+
+    text-align: center;
+    
+    margin-bottom: 2vw;
+}
+
+#about-us > h2 {
+    font-size: 4vw;
+}
+
+#about-us > p {
+    font-size: 1.5vw;
+}
+
+#frc-logo {
+    max-height: 10vw;
+}
+
+#history-checkbox {
+    display: none;
+    visibility: hidden;
+}
+
+#checkbox-label {
+    display: block;
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 3vw;
+
+    margin-top: 1vw;
+    
+    color: #f2d1d1;
+
+    transition: 0.2s;
+
+    user-select: none;
+}
+
+#checkbox-label:hover {
+    color:rgb(185, 255, 255)
+}
+
+#checkbox-label::before {
+    font-weight: 300;
+    font-size: 3vw;
+    content: "+";
+}
+
+#history-div {
+    height: 0;
+    overflow: hidden;
+    transition: height;
+    background-size: 100%;
+}
+
+#our-achievements {
+    margin-top: 2vw;
+    max-height: 700vh;
+    background-color: #333;
+    text-align: center;
+}
+
+#our-achievements > h2 {
+    font-size: 4vw;
+}
+#our-achievements-recent > h3 {
+    font-size: 2vw;
+}
+#our-achievements-recent > p {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+#our-achievements-recent > img {
+    max-width: 40%;
+    border-radius: 18px;
+}
+#our-achievements-recent {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    background-color: #252525;
+    border-radius: 18px;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.our-achievements-c {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+
+    background-color: #333;
+    border-radius: 18px;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    max-height: 250vw;
+    min-height: 10vw;
+    overflow: auto;
+
+    display: flex;
+}
+
+#our-achievements > p {
+    font-size: 1.5vw;
+}
+
+#our-projects {
+    max-height: 250vw;
+    min-height: 10vw;
+    overflow: auto;
+
+    background-color: #333;
+    
+    text-align: center;
+}
+#our-projects > h2 {
+    font-size: 4vw;
+}
+#our-projects > h3 {
+    font-size: 3.5vw;
+}
+#our-projects > p {
+    font-size: 1.5vw;
+}
+.project-h2 {
+    font-size: 3.5vw;
+}
+.project-p {
+    font-size: 1.5vw;
+    
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.project-img {
+    max-height: 40%;
+    border-radius: 18px;
+    margin-bottom: 0.5vw;
+}
+.project-button {
+    align-self: baseline;
+
+    background-color: rgb(255, 115, 115); /* Green */
+    border: none;
+    padding: 15px 32px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: #fff;
+    
+    border-radius: 6px;
+}
+.project-button:hover {
+    cursor: pointer;
+}
+
+.projects-carousel {
+    background: #333;
+    margin-top: 4vw;
+}
+
+.projects-carousel-cell {
+    width: 40%;
+    height: 55vw;
+    background: rgb(30, 30, 30);
+    border-radius: 18px;
+  
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    text-align: center;
+}
+
+.textdiv {
+    background-color: #333;
+    min-height: 10vw;
+    max-height: 100vw;
+
+    position: relative;
+}
+.textdiv > p {
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+.textdiv > h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+.textdiv > h3 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.imgdiv {
+    background-color: #333;
+    min-height: 10vw;
+    max-height: 100vw;
+
+    text-align: center;
+    text-justify: auto;
+    margin: auto;
+}
+.imgdiv > img {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    max-height: 25vw;
+    border-radius: 18px;
+    filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.150));
+}
+
+#sponsors {
+    max-height: 250vw;
+    min-height: 10vw;
+    overflow: auto;
+
+    background-color: #333;
+    
+    text-align: center;
+}
+#sponsors > h2 {
+    font-size: 4vw;
+}
+#sponsors > h3 {
+    font-size: 3.5vw;
+}
+#sponsors > p {
+    font-size: 1.5vw;
+}
+.sponsor-table {
+    width: 70%;
+    height: 10vw;
+
+    overflow: auto;
+
+    display: table;
+
+    margin: 0 auto;
+
+    text-align: center;
+    vertical-align: middle;
+}
+.sponsor-image {
+    display: inline-block;
+    width: 20vw;
+    background-position: center;
+    background-size: cover;
+    margin: 3vw;
+    vertical-align: middle;
+}
+
+#contact-us {
+    height: 100vh;
+    background-color: #333;
+}
+
+.kaiser-welcome-logo {
+    position: absolute;
+    top: center;
+    left: center;
+    min-width: 10%;
+    min-height: 10%;
+    max-width: 30%;
+    z-index: 1; /* Set the z-index of the image to 1 */
+
+    opacity: 0;
+	transform: scale(1);
+    animation: logo-anim 6s forwards;
+}
+
+.intro-text {
+    opacity: 0;
+    display: block;
+    animation: text-anim 6s forwards 6s;
+    font-size: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    min-width: 10%;
+    min-height: 10%;
+    font-weight: 500;
+}
+#footer-container {
+    align-items: center;
+}
+.footer-icon {
+    min-height: 25px;
+    height: 4vw;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.footer-icon:hover {
+    cursor: pointer;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+
+    max-height: 40vw;
+}
+
+@media only screen and (max-width: 1200px) {
+	nav li {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+	nav li {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 2.5vw;
+    }
+}
+
+
+@keyframes logo-anim {
+    0% {
+        opacity: 0;
+        scale: 0.4;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        scale: 1.2;
+    }
+}
+
+@keyframes text-anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#history-checkbox:checked ~ #history-div
+{
+    height: 100%;
+}
+
+#history-checkbox:checked ~ #checkbox-label::before
+{
+    content: "-";
+}
